@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Open+Sans&family=Oswald&family=Poppins&display=swap"  rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Open+Sans&family=Oswald&family=Poppins&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"> </script>
     <title>Dev Previsão </title>
 </head>
 
@@ -16,16 +19,19 @@
 
     <div class="caixa-maior">
 
-        <input placeholder="Digite o Nome da Cidade">
-        <button>
+        <input class="input-cidade" placeholder="Digite o Nome da Cidade">
+        <button onclick="cliqueiNoBotao()">
             <img class="lupa" src="./lupa.svg" alt="lupa">
         </button>
 
         <div class="caixa-media">
-            <h2> Tempo No Rio De Janeiro </h2>
+            <h2 class="cidade"> Tempo No Rio De Janeiro </h2>
             <p class="tempo"> 28°C</p>
-
-            <p class="descricao"> Nuvens Diversas</p>
+            <div class="caixa-menor">
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png" 
+                width="40px " > 
+                <p class="descricao"> Nuvens Diversas</p>
+            </div>
             <p class="umidade"> Umidade 70%</p>
         </div>
     </div>
